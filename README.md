@@ -60,10 +60,10 @@ cmake ..
 make 
 sudo make install
 ```
-This is actually, where the build system failed for my Debian mixed system with Python2 and Python3. Building Boost without python3 support solved the problem for me. You can do this, of course, only temporary.
+This is actually, where the build system failed for my Debian mixed system with Python2 and Python3. Building Boost without python3 support solved the problem for me. If needed, you can do this temporarily or in some Docker container.
 
 ## Now some minor changes:
-Boost has built a lot of python libraries for you, but they are named after the version (e.g., libbooost_python27.so). These are (currently) hardcoded in the Makefile. Update, if you don't have these names, otherwise you will see linker errors.
+Boost has built a lot of python libraries for you, but they are named after the version (e.g., libbooost_python27.so). These are (currently) hardcoded in the Makefile. Update the Makefile, if your names differ.
 
 
 ## Now do it
