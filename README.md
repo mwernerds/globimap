@@ -1,6 +1,24 @@
-# globimap
+# GloBiMaps - A Probabilistic Data Structure for In-Memory Processing of Global Raster Datasets
 
-Global Binary Maps Illustrative Implementation
+We are happy to announce that our latest research on a randomized data structure GloBiMap
+for high-resolution, low-cardinality global raster information (e.g., which place on Earth
+contains a building) has been selected for full-paper presentation at ACM SIGSPATIAL GIS.
+We are excited about the positive reviews. This repository contains some  source
+code, which has been simplified to be independent from our Big Geospatial Data infrastructure.
+
+The following images illustrate the power by showing urban regions over Europe by color-coding 20x20 pixel patches.
+
+## 8 MB
+There is some noise, but the structures are clear
+
+![8 MB](globimap-scale-with-m-26.png)
+
+## 64 MB
+Errors are already rare.
+
+![64 MB](globimap-scale-with-m-29.png)
+
+Note that we have an error correction methodology in the paper allowing you to have an exact representation!
 
 
 # Building
