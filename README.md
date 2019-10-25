@@ -129,9 +129,11 @@ Some patterns / remarks:
 - If you don't call put (or map) after using enforce, you are guaranteed to have no errors. If you add something, new errors can appear.
 
 
-# A nice application: Sierpinski's Triangle
+# A nice example application: Sierpinski's Triangle
 
-In src/sample.py you find a complete walk-through of how globimaps can be applied. To keep this git small, we generate
+
+
+In [src/sample.py](src/sample.py) you find a complete walk-through of how globimaps can be applied. To keep this git small, we generate
 a sparse dataset algorithmically, in fact, we generate a point cloud that is dense in Sierpinski's triangle, that is, for
 n to infinity, this becomes the Sierpinski triangle. In this way, our dataset is generated in 12 LOCs instead of downloading
 a few megabytes.
